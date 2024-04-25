@@ -3,19 +3,21 @@ using namespace std;
 class Rishi{
     public:
     void name1(){
-    cout<<"My name is Rishi Raj";
+    cout<<"My name is Rishi Raj"<<endl;
     }
 
 };
-class Favroit   Rishi{
+class Favroit: public Rishi{
     public:
     void name2(){
-        cout<<"My favroit fruit is Mango";
+        cout<<"My favroit fruit is Mango"<<endl;
     }
 };
 int main(){
     Favroit p;
-    cout<<"p.name1"<<endl;
-    cout<<"p.name2"<<endl;
+    p.name1();
+    p.name2();
+ 
+
     return 0;
 }
